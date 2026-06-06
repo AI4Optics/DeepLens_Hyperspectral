@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 import torch
 from torchvision.utils import make_grid, save_image
 
-from .optics import (
+from .basics import (
     BLUE_RESPONSE,
     DEPTH,
     GREEN_RESPONSE,
@@ -20,7 +20,7 @@ from .optics import (
     DeepObj,
     init_device,
 )
-from .optics.render_psf import render_psf_map, render_psf
+from .render_psf import render_psf_map, render_psf
 
 
 class Lens(DeepObj):

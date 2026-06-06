@@ -29,7 +29,7 @@ from tqdm import tqdm
 from transformers import get_cosine_schedule_with_warmup
 
 from .lens import Lens
-from .optics.basics import (
+from .basics import (
     DEFAULT_WAVE,
     DEPTH,
     EPSILON,
@@ -42,10 +42,10 @@ from .optics.basics import (
     WAVE_RGB,
     init_device,
 )
-from .optics.materials import Material
-from .optics.monte_carlo import forward_integral
-from .optics.ray import Ray
-from .optics.geometric_surface import (
+from .materials import Material
+from .monte_carlo import forward_integral
+from .ray import Ray
+from .geometric_surface import (
     Aperture,
     Aspheric,
     Cubic,
@@ -54,9 +54,9 @@ from .optics.geometric_surface import (
     Spheric,
     ThinLens,
 )
-from .optics.wave import AngularSpectrumMethod
-from .optics.utils import diff_float
-from .utils import (
+from .wave import AngularSpectrumMethod
+from .utils import diff_float
+from src.utils import (
     batch_psnr,
     batch_ssim,
     denormalize_ImageNet,

@@ -8,9 +8,9 @@ import torch
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 
-from .optics.geometric_surface import Aperture, Aspheric, Spheric
-from .optics.materials import SELLMEIER_TABLE
-from .optics.basics import WAVE_RGB
+from .geometric_surface import Aperture, Aspheric, Spheric
+from .materials import SELLMEIER_TABLE
+from .basics import WAVE_RGB
 
 
 # ====================================================================================

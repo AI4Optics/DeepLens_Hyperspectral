@@ -19,7 +19,7 @@ class Surface(DeepObj):
     def __init__(self, r, d, mat2, is_square=False, device="cpu"):
         super(Surface, self).__init__()
 
-        raise Exception("Surfaces is deprecated. Use deeplens.optics.surface instead.")
+        raise Exception("Surfaces is deprecated. Use src.deeplens.geometric_surface instead.")
 
         # Surface position
         self.d = d if torch.is_tensor(d) else torch.tensor(d)
