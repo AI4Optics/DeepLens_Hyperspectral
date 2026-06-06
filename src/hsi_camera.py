@@ -6,10 +6,10 @@ import numpy as np
 import scipy.io as sio
 import torch
 
-from deeplens.camera import Renderer
-from deeplens.diffraclens import DiffractiveLens
-from deeplens.optics.render_psf import render_psf
-from deeplens.sensor import RGBSensor
+from src.camera import Renderer
+from src.deeplens.diffraclens import DiffractiveLens
+from src.deeplens.render_psf import render_psf
+from src.sensor import RGBSensor
 
 
 class HSICamera(Renderer):

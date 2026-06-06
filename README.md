@@ -38,12 +38,13 @@ python 1_deeplens_hsi.py
 
 ## Project Structure
 
-- `deeplens/` - Core library
-  - `hsi_camera.py` - Hyperspectral camera simulation
-  - `diffraclens.py` - Diffractive lens implementation
-  - `optics/` - Optical simulation components
+- `src/` - Core library
+  - `deeplens/` - Optical simulation components and lens models (geolens, diffraclens, hybridlens)
+  - `sensor/` - Sensor and ISP models
   - `network/` - Neural network models for reconstruction
-  - `utils/` - Utility functions
+  - `camera.py` - Camera renderer for end-to-end pipelines
+  - `hsi_camera.py` - Hyperspectral camera simulation
+  - `utils.py` - Utility functions
 - `lenses/` - Lens files
 - `sensors/` - Sensor files
 - `configs/` - Training and evaluation configurations

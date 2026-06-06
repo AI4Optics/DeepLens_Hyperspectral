@@ -23,17 +23,17 @@ import torch.nn.functional as F
 
 from .geolens import GeoLens
 from .lens import Lens
-from .optics.basics import (
+from .basics import (
     SPP_COHERENT,
     PSF_KS,
     DEFAULT_WAVE,
     WAVE_RGB,
 )
-from .optics.monte_carlo import forward_integral
-from .optics.geometric_surface import Diffractive_GEO
-from .optics.diffractive_surface import Binary2, Pixel2D, Fresnel, Zernike
-from .optics.wave import AngularSpectrumMethod
-from .optics.utils import diff_float
+from .monte_carlo import forward_integral
+from .geometric_surface import Diffractive_GEO
+from .diffractive_surface import Binary2, Pixel2D, Fresnel, Zernike
+from .wave import AngularSpectrumMethod
+from .utils import diff_float
 from .geolens_utils import draw_setup_2d, draw_raytraces_2d
 
 

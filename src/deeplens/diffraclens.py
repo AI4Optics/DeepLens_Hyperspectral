@@ -20,12 +20,12 @@ import torch.nn.functional as F
 from torchvision.utils import save_image
 
 from .lens import Lens
-from .optics.basics import DEFAULT_WAVE, DEPTH, EPSILON
-from .optics.diffractive_surface import Binary2, Fresnel, Pixel2D, ThinLens, Zernike
-from .optics.materials import Material
-from .optics.render_psf import render_psf
-from .optics.utils import diff_float
-from .optics.waveoptics_utils import plane_wave_field, point_source_field
+from .basics import DEFAULT_WAVE, DEPTH, EPSILON
+from .diffractive_surface import Binary2, Fresnel, Pixel2D, ThinLens, Zernike
+from .materials import Material
+from .render_psf import render_psf
+from .utils import diff_float
+from .waveoptics_utils import plane_wave_field, point_source_field
 
 
 class DiffractiveLens(Lens):

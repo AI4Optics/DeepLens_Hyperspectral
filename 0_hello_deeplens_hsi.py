@@ -6,7 +6,7 @@ This code and data is released under the Creative Commons Attribution-NonCommerc
     # If you publish any code, data, or scientific work based on this, please cite our work.
 """
 
-from deeplens import HSICamera
+from src.hsi_camera import HSICamera
 
 hsi_cam = HSICamera(
     lens_file="./lenses/paraxiallens/doelens_hsi.json",

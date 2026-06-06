@@ -2,9 +2,9 @@
 
 import torch
 
-from .optics.basics import DeepObj
-from .geolens import GeoLens
-from .sensor import RGBSensor
+from src.deeplens.basics import DeepObj
+from src.deeplens.geolens import GeoLens
+from src.sensor import RGBSensor
 
 
 class Renderer:
